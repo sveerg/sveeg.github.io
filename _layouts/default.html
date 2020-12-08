@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/spcss@0.5.0" />
+    <style> 
+      ul { 
+          padding-left:1em;
+      } 
+  </style> 
+    <title>{{ site.title }}</title>
+  </head>
+  <body>
+    <h1><a href="{{ site.url }}">{{ site.title }}</a></h1>
+    <p>{{ site.description }}</p>
+    <h2>Posts</h2>
+    <ul>
+      {% for post in site.posts %}
+      <li>
+        {{ post.date | date: "%b %d, %y" }}
+        <a href="{{ post.url }}"> {{ post.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
