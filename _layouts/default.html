@@ -1,16 +1,8 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/spcss@0.5.0" />
-    <style> 
-      ul { 
-          padding-left:1em;
-      } 
-  </style> 
-    <title>{{ site.title }}</title>
-  </head>
+  {% include meta.html %}
   <body>
-    <h1><a href="{{ site.url }}">{{ site.title }}</a></h1>
+    <h1>{{ site.title }}</h1>
     <p>{{ site.description }}</p>
     <h2>Posts</h2>
     <ul>

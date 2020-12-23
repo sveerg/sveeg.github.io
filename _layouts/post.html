@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/spcss" />
-    <title>{{ site.title }}</title>
-  </head>
+  {% include meta.html %}
   <body>
-    <h1>{{ page.title }}</h1>
-    <h3>Posted on {{ page.date | date: "%b %d, %Y" }}</h3>
+    <h2>{{ page.title }}</h2>
+    <h4>Posted on {{ page.date | date: "%b %d, %Y" }}</h4>
     <p>{{ content }}</p>
   </body>
 </html>
